@@ -1,0 +1,16 @@
+<div class="container pt-5">
+    <div class="row text-center">
+        <div ng-repeat="blog in blogs">
+            <div class="col-md-12 pb-3 pl-2 pr-2">
+                <div class="card">
+                    <img class="card-img-top" ng-src="{{blog.url}}" alt="Card image cap">
+                    <div class="card-body text-white">
+                        <h5 class="card-title text-white">{{blog.titulo}}</h5>
+                        <p class="card-text text-white">{{blog.descripcion}}</p>
+                        <a href="#!/detalle/{{blog.$id}}" class="btn btn-primary">Leer Más...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

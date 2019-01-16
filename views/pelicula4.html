@@ -1,0 +1,46 @@
+<div class="container" ng-show="!log">
+        <h1 class="text-white">Por favor iniciar sesión para poder visualizar este contenido</h1>
+    </div>
+    
+    <div class="container ctn-all" ng-show="log">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ctn-text">
+                    <span class="font-weight-bold text-white">Titulo:</span>
+                    <span class="text-white">Las Cruces</span>
+                </div>
+                <div class="ctn-text">
+                    <span class="font-weight-bold text-white">Duración:</span>
+                    <span class="text-white">85min</span>
+                </div>
+                <div class="ctn-text">
+                    <span class="font-weight-bold text-white">Director:</span>
+                    <span class="text-white">Gustav Muller</span>
+                </div>
+                <div class="ctn-text">
+                    <p class="text-white">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nam molestiae incidunt magni, quo ipsa tempora reiciendis ad ipsam at placeat enim amet architecto voluptas inventore numquam unde odio? Deleniti?
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div ng-show='!pay'>
+                    <div class="center">
+                        <img src="img/TVQ-peliculas-lascruces.png" alt="Pelicula" class="img-fluid">
+                    </div>
+                    <div class="center">
+                        <h4 class="text-white">USD 0.99</h4>
+                    </div>
+                    <div class="center">
+                        <paypal-button env="opts.env" client="opts.client" payment="opts.payment" commit="opts.commit" on-authorize="opts.onAuthorize"></paypal-button>
+                    </div>
+                </div>
+                <div ng-show="pay">
+                    <div class="embed-responsive embed-responsive-21by9">
+                        <video src="http://tvq.tv/movies/Las%20Cruces.mp4" controls controlsList="nodownload"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    

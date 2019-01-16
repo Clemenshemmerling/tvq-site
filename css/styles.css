@@ -1,0 +1,443 @@
+/*!
+ * Template tvq
+ * Copyright Nerdtecs 2018
+ * Autor: Alejandro Batres
+ */
+
+ body{
+     background-color: #000000;
+ }
+
+ .espacio-menu{
+     margin: 20px 10px 20px 10px;
+ }
+
+ .logo-tvq{
+      width: 130px;
+  }
+
+ .bg-tvq{
+     background-color: #211c0b;
+ }
+
+ .descripcion{
+     width: 45%;
+     text-align: justify;
+ }
+
+ .lead{
+     margin-top: 20px;
+ }
+
+ .nav-item{
+     padding: 6px 10px 0px 10px;
+     text-transform: uppercase;
+  }
+
+ .cinta-tvq{
+     width: 100%;
+ }
+
+ .col-md-12{
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+
+ .col-md-10{
+     padding-left: 0px;
+     padding-right: 0px;
+ }
+
+ .row{
+     margin-left: 0px;
+     margin-right: 0px;
+ }
+
+ .slide-tvq{
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+
+ .espacio-tvq{
+     padding-left: 22px;
+     padding-right: 22px;
+ }
+
+ .videoWrapper {
+     border: 1px solid #1c1c1c;
+ }
+
+ .video-tvq{
+     width: 85%;
+     height: 220px;
+ }
+
+ .separador{
+     border: 2px solid #393838;
+     margin-top: 35px;
+ }
+
+ .cartelera{
+     color: #a4a0a0;
+     text-align: center;
+     font-size: 50px;
+     font-weight: 900;
+     padding-top: 45px;
+ }
+
+ .iconos-footer{
+     width: 100%
+ }
+
+ .centro-iconos{
+     padding-bottom: 50px;
+ }
+
+ .search-tvq{
+     border-radius: 35px !important;
+ }
+
+ .fa, .fas {
+     color: #ffffff;
+     font-size: 30px;
+     margin-right: 15px;
+ }
+
+ .tags{
+     color: #ffffff;
+     font-size: 20px;
+     margin-top: 15px;
+ }
+
+ .iconos-redes{
+     width: 130px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 30px;
+ }
+
+ .follow{
+     width: 275px;
+ }
+
+ .cintas-tvq{
+     width: 75%;
+
+ }
+
+ .cinta1-tvq{
+    width: 100%;
+
+}
+
+.buttons-nav{
+    width: 110px;
+}
+
+.button-premium{
+    width: 168px;
+}
+
+ .icono-separador{
+     display: none;
+ }
+
+ .dropdown-item{
+     color: #ffffff !important;
+ }
+
+ .navbar-nav .dropdown-menu{
+    background-color: #211c0b;
+ }
+
+ .dropdown-item:focus, .dropdown-item:hover{
+    background-color: #3e3515;
+ }
+
+ .ml-auto, .mx-auto {
+  margin-left: auto!important;
+  margin-right: 50px;
+}
+
+ .fondo-degradado{
+    background-image: url(../img/fondo-pantalla.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ .texto-contacto{
+    color: #fff;
+    font-size: 22px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+ }
+
+ .ico-text{
+    color: #fff;
+    font-size: 68px;
+    padding-top: 22px;
+    margin-bottom: 37px;
+ }
+
+ .contact-ico{
+    width: 65px;
+ }
+
+ .icon-fond{
+    text-align: center;
+    background-color: #000000;
+    padding: 5px 5px 10px 5px;
+ }
+
+ .cuadro-text{
+    font-size: 28px;
+    padding-top: 12px;
+    color: #ffffff;
+ }
+
+ .fondo-cont{
+     background-color: #151414;
+ }
+
+ .contact-bar{
+    width: 40px;
+    padding: 10px 0px 10px 0px;
+ }
+
+ /* Login Form */
+.wrapper {
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+}
+
+.facebook-icon{
+    font-size: 42px;
+    color: #2160a5;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.google-icon{
+    font-size: 38px;
+    color: #dd5347;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.replay{
+    width: 50px;
+}
+
+.pais-replay{
+    color: #ffffff;
+    font-size: 38px;
+}
+
+/* perfil */
+
+.card {
+    background: #000000;
+    border: 1px solid #eda12f;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    text-align: center;
+    -webkit-transition: .2s ease-in-out;
+}
+
+.card:hover {
+    margin-top: -15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.card-banner {
+    /* background: url('https://images.unsplash.com/photo-1531330969550-7e8a9b2fb3df?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=a03bd3a711775d6e4f3d742237adbf8e'); */
+    width: inherit;
+    border-bottom: 1px solid #eda12f;
+    height: 100px;
+    padding-top: 35px;
+    background-color: #211c0b;
+    background-position: top;
+    background-size: cover;
+}
+
+.card-profile {
+    /* background: url('../img/logo-header-TVQ.png'); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto auto;
+    background-size: cover;
+    background-color: #f1f1f1;
+    border: 3px solid #fff;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+
+.foto-user{
+    width: 85px;
+    padding-top: 20px;
+}
+
+h3, a, i {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: .2s ease-in-out;
+}
+
+h3 {
+    margin-top: 25px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #ffffff;
+}
+.correo, .numero {
+    display: block;
+	padding: 5px 0px;
+	font-size: 14px;
+	color: #ffffff !important;
+	text-decoration: none;
+    cursor: pointer;
+}
+
+.correo:hover, .numero:hover {
+    background-color: #ccc;
+    color: #000 !important;
+}
+
+.titulos{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.blanco{
+    color: #ffffff;
+}
+
+
+.foot-menu {
+    width: 225px;
+    border-top: solid 1px white;
+}
+
+span.foot-menu-text.text-white.text-center {
+    cursor: pointer;
+}
+
+.ctn-text {
+    margin-bottom: 15px;
+}
+
+.center {
+    display: flex;
+    justify-content: center
+}
+
+.pay {
+    display: none;
+}
+
+iframe {
+    width: 100%;
+}
+
+.ctn-all {
+    margin-top: 100px;
+}
+
+.btn-contact {
+    background: content-box;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-contact:focus {
+    outline: none;
+} 
+
+form.contact-form.ng-pristine.ng-valid input {
+    border-radius: 20px;
+}
+
+textarea#descripcion {
+    border-radius: 20px;
+}
+
+p.cuadro-text.big-text {
+    font-size: 45px;
+}
+
+ /* css carousel */
+
+ @media (max-width: 768px) { 
+    .navbar-brand {
+        margin-right: 0;
+    }
+ }
+
+ @media (max-width: 576px) {
+     .iconos-footer{
+         width: 50% !important;
+     }
+     .centro-iconos{
+         text-align: center !important;
+     }
+     .follow {
+         width: 190px !important;
+     }
+     .iconos-redes{
+         width: 80px !important;
+     }
+     .icono-separador{
+         display: block !important;
+     }
+     .desaparecido{
+         display: none !important;
+     }
+     .ico-text{
+         font-size: 28px !important;
+     }
+     .cuadro-text{
+         font-size: 20px !important;
+     }
+ }

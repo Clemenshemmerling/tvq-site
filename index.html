@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Tvquetzachapin</title>
+
+        <link rel="shortcut icon" href="img/drawable-hdpi-icon.ico" type="image/x-icon">
+
+		<!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link href="css/styles.css" rel="stylesheet">
+
+    </head>
+
+	<body ng-app="myApp">
+		<!-- Menu -->
+        <div class="espacio-menu">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-tvq">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-left">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#!">
+                                <img class="buttons-nav" src="img/icono-navinicio.png">
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="button-premium" src="img/icono-navcarretilla.png">
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!/blog">
+                                <img class="buttons-nav" src="img/icono-navreplay.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!/filosofia">
+                                <img class="buttons-nav" src="img/icono-navfolo.png">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!/contacto">
+                                <img class="buttons-nav" src="img/icono-navcontacto.png">
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown hidden-md-dow" ng-controller="HomController">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Login
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <form ng-show="log" class="pb-2">
+                                        <div class="form-group">
+                                            <label class="text-white">{{userProfile.email}}</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-warning btn-block" ng-click="logout()">Logout</button>
+                                    </form>
+
+                                    <form ng-show="!log" class="pb-2">
+                                        <div class="form-group" ng-show="regis">
+                                            <label class="text-white" for="inputEmail">Nombre</label>
+                                            <input type="text" class="form-control" ng-model="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-white" for="inputEmail">Email</label>
+                                            <input type="email" class="form-control" ng-model="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="text-white" for="inputPassword">Password</label>
+                                            <input type="password" class="form-control" ng-model="pass">
+                                        </div>
+                                        <button type="submit" class="btn btn-warning btn-block" ng-click="login()" ng-show="!regis">Login</button>
+                                        <button type="submit" class="btn btn-warning btn-block" ng-click="signin()" ng-show="regis">Registrar</button>
+                                    </form>
+                                    <form>
+                                        <div class="foot-menu p-3">
+                                            <span class="foot-menu-text text-white text-center" ng-click="register()" ng-show="!regis">Regístrate aquí</span>
+                                            <span class="foot-menu-text text-white text-center" ng-click="ingresar()" ng-show="regis">Inicia sesión aquí</span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="buttons-nav" src="img/icono-navpromo.png">
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="logo-tvq" src="img/logo-oro-letras-blancas.png" alt="tvquetzachapin">
+                </a>
+            </nav>
+            <div class="row mr-0 ml-0 mt-4">
+                <div class="col-md-12">
+                    <div class="col-md-5">
+                        <form class="form-inline">
+                          <div class="input-group">
+                            <i class="fas fa-search"></i>
+                            <input type="text" class="form-control search-tvq" placeholder="BUSCADOR">
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ng-view -->
+        <div ng-view></div>
+
+        <!-- Bootstrap y Jquery -->
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <!-- Angularjs y angular-route -->
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+
+        <!-- AngularFire y Firebase -->
+        <script src="js/firebase.js"></script>
+        <script src="js/angularfire.js"></script>
+
+        <!-- Paypal  -->
+        <script src="js/checkout.js"></script>
+
+        <!-- Key Firebase blog -->
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBBAoNNbzWOhLE16ABgvfbYPTJCe8cm8rY",
+                authDomain: "blog-tvq.firebaseapp.com",
+                databaseURL: "https://blog-tvq.firebaseio.com",
+                projectId: "blog-tvq",
+                storageBucket: "blog-tvq.appspot.com",
+                messagingSenderId: "869830257632"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <!-- Firebase de Usuarios -->
+        <script>
+            // Initialize Firebase
+            var secondConfig = {
+                apiKey: "AIzaSyCSKVaszan68KP8XbOJdrlWijTTfDJIb-0",
+                authDomain: "tvquetzachapin-4a4db.firebaseapp.com",
+                databaseURL: "https://tvquetzachapin-4a4db.firebaseio.com",
+                projectId: "tvquetzachapin-4a4db",
+                storageBucket: "tvquetzachapin-4a4db.appspot.com",
+                messagingSenderId: "276638302222"
+            };
+            var secondary = firebase.initializeApp(secondConfig, "secondary");
+            var auth = secondary.auth();
+            var db = secondary.database();
+        </script>
+
+		<!-- Module -->
+		<script src="js/app.js"></script>
+
+        <!-- Controllers -->
+        <script src="js/controllers/Mo1Controller.js"></script>
+        <script src="js/controllers/Mo2Controller.js"></script>
+        <script src="js/controllers/Mo3Controller.js"></script>
+        <script src="js/controllers/Mo4Controller.js"></script>
+        <script src="js/controllers/Mo5Controller.js"></script>
+        <script src="js/controllers/HomController.js"></script>
+        <script src="js/controllers/ListController.js"></script>
+		<script src="js/controllers/AddController.js"></script>
+        <script src="js/controllers/EditController.js"></script>
+        <script src="js/controllers/BlogController.js"></script>
+        <script src="js/controllers/ContaController.js"></script>
+    </body>
+</html>

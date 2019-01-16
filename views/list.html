@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#!/tvq-admin">Tvquetzachapin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#!/tvq-admin">Inicio</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<p class="lead mt-4">Blogs publicados</p>
+<table class="table mt-4" >
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Contenido</th>
+            <th>Palabras claves</th>
+            <th>Fecha blog</th>
+            <th>Imagen destacada</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="blog in blogs">
+            <td>{{blog.titulo}}</td>
+            <td class="descripcion">{{blog.descripcion}}</td>
+            <td>{{blog.palabra}}</td>
+            <td>{{blog.fecha}}</td>
+            <td><img class="w-100" ng-src="{{blog.url}}"></td>
+	        <td>
+                <a href="#!/edit/{{blog.$id}}" class="btn btn-small btn-primary">Editar</a> <a class="btn btn-small btn-danger" ng-click="removeBlog(blog.$id)">Eliminar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    <a href="#!add" class="btn btn-success" role="button">Agregar Nuevo blog</a>
+</p>
